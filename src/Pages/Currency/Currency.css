@@ -1,0 +1,105 @@
+.Currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+  margin-left: 300px;
+}
+
+.firstCurrency {
+  background-color: #fff;
+  padding: 10rem;
+  border-radius: 5px;
+  height: 200px;
+  box-shadow: 2px 2px 3px #7a7878;
+  position: absolute;
+  left: 250px;
+  z-index: 1;
+}
+
+.even1,
+.even3 {
+  background-color: #5f9bd9;
+  width: 100%;
+  padding: 1rem 8rem;
+  margin-left: -90px;
+  color: #fff;
+  font-weight: 900;
+}
+
+.even2 {
+  padding: 1rem;
+  width: 100%;
+  color: #fff;
+  font-weight: 900;
+  padding-left: 40px;
+}
+
+.currency_heading {
+  font-size: 50px;
+}
+
+.secondCurrency {
+  position: relative;
+  display: flex;
+  box-shadow: 5px 3px 5px;
+  padding: 5.5rem 10.5rem;
+  border-radius: 10px;
+  background-color: #3682ce;
+}
+
+.button_Currency {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-left: 50px;
+}
+
+.default {
+  font-size: x-large;
+  font-weight: 500;
+  margin-left: 150px;
+}
+
+select {
+  padding: 0.5rem 2rem;
+  border: none;
+  border: 1px solid #999;
+  font-size: 18px;
+  color: #1c87c9;
+  background-color: #eee;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+option {
+  font-size: larger;
+  float: left;
+  font-weight: 400;
+}
+
+span {
+  color: #fff;
+  font-weight: bolder;
+}
+
+.emoji {
+  font-size: 52px;
+  margin-top: -50px;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .emoji {
+    animation: App-logo-spin infinite 2s alternate;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(20deg);
+  }
+}
