@@ -34,9 +34,11 @@ export default function Modal({ setModal }) {
     } else if (values.currency === 'XAF') {
       setaddAmount2(addAmount2 + parseInt(values.deposit));
       setModal(false);
-    } else {
+    } else if (values.currency === 'EURO') {
       setaddAmount3(addAmount3 + parseInt(values.deposit));
       setModal(false);
+    } else {
+      alert('Not possible');
     }
   };
 

@@ -23,24 +23,24 @@ export default function Currency() {
 
   useEffect(() => {
     if (select === undefined) {
-      const add = addAmount1 / 600;
-      const add3 = addAmount3 / 1.07;
+      const add = addAmount1 * 0.0016;
+      const add3 = addAmount3 * 1.07;
       const add4 = `${(add + addAmount2 + add3).toFixed(2)}USD`;
       setusdCurrency(add4);
     } else if (select === 'USD') {
-      const add = addAmount1 / 600;
-      const add3 = addAmount3 / 1.07;
+      const add = addAmount1 * 0.0016;
+      const add3 = addAmount3 * 1.07;
       const add4 = (add + addAmount2 + add3).toFixed(2);
       setusdCurrency(add4 + select);
     } else if (select === 'XAF') {
-      const add = addAmount2 * 600;
-      const add3 = addAmount3 * 1.07;
+      const add = addAmount2 * 610.76;
+      const add3 = addAmount3 * 655.76;
       const add4 = (add + addAmount1 + add3).toFixed(2);
       setusdCurrency(add4 + select);
     } else {
-      const add = addAmount1 / 600;
-      const add3 = addAmount2 * 1.07;
-      const add4 = (add + addAmount2 + add3).toFixed(2);
+      const add = addAmount1 * 0.0015;
+      const add3 = addAmount2 * 0.93;
+      const add4 = (add + addAmount3 + add3).toFixed(2);
       setusdCurrency(add4 + select);
     }
   });
@@ -89,7 +89,7 @@ export default function Currency() {
               <sup>Your Dollar Balance:</sup> <span>{addAmount2} USD</span>
             </p>
             <p className="even3">
-              <sup>Your Euro Balance:</sup> <span>{addAmount3} Euro</span>
+              <sup>Your Euro Balance:</sup> <span>{addAmount3} EURO</span>
             </p>
             <div className="button_Currency">
               <Button title="Deposit" setModal={setModal} />

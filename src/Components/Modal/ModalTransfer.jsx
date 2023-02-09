@@ -32,7 +32,7 @@ export default function ModalAddCurrency({ setAddcurrency }) {
     ) {
       const val = addAmount2 - values.TransferAmount;
       setaddAmount2(val);
-      setaddAmount1(addAmount1 + values.TransferAmount * 0.93);
+      setaddAmount1(addAmount1 + values.TransferAmount * 610.76);
       setAddcurrency(false);
     } else if (
       values.Currencyfrom === 'USD' &&
@@ -41,7 +41,7 @@ export default function ModalAddCurrency({ setAddcurrency }) {
     ) {
       const val = addAmount2 - values.TransferAmount;
       setaddAmount2(val);
-      setaddAmount3(addAmount3 + values.TransferAmount * 610.76);
+      setaddAmount3(addAmount3 + values.TransferAmount * 0.93);
       setAddcurrency(false);
     } else if (
       values.Currencyfrom === 'XAF' &&
@@ -50,7 +50,7 @@ export default function ModalAddCurrency({ setAddcurrency }) {
     ) {
       const val = addAmount1 - values.TransferAmount;
       setaddAmount1(val);
-      setaddAmount2(addAmount2 + values.TransferAmount * 1.07);
+      setaddAmount2(addAmount2 + values.TransferAmount * 0.0016);
       setAddcurrency(false);
     } else if (
       values.Currencyfrom === 'EURO' &&
@@ -68,7 +68,7 @@ export default function ModalAddCurrency({ setAddcurrency }) {
     ) {
       const val = addAmount3 - values.TransferAmount;
       setaddAmount3(val);
-      setaddAmount2(addAmount2 + values.TransferAmount * 0.0016);
+      setaddAmount2(addAmount2 + values.TransferAmount * 1.07);
       setAddcurrency(false);
     } else if (
       values.Currencyfrom === 'XAF' &&
@@ -80,7 +80,7 @@ export default function ModalAddCurrency({ setAddcurrency }) {
       setaddAmount3(addAmount3 + values.TransferAmount * 0.0015);
       setAddcurrency(false);
     } else {
-      alert('Transfer Amount is more than the current Balance');
+      alert('Transfer Amount is more than the current Balance ');
     }
   };
   return (
