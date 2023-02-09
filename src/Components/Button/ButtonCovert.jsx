@@ -2,16 +2,14 @@
 import React from 'react';
 import './Button.css';
 
-export default function Button({ title, color, setModal }) {
+export default function ButtonCovert({ title, color, setConvert }) {
   return (
     <div>
       <button
         type="submit"
         style={{ backgroundColor: color }}
         className="pool"
-        onClick={() => {
-          setModal(true);
-        }}
+        onClick={() => setConvert(true)}
       >
         {title}
       </button>
