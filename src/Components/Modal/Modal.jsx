@@ -1,3 +1,4 @@
+/* eslint-disable no-alert */
 /* eslint-disable radix */
 /* eslint-disable no-cond-assign */
 /* eslint-disable no-constant-condition */
