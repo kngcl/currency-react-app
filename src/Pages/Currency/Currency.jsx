@@ -67,10 +67,12 @@ export default function Currency() {
         )}
         {Convert === true && <ModalConvert setConvert={setConvert} />}
         <div className="firstCurrency">
-          <p className="emoji">&#128178;</p>
-          <p>You have </p>
-          <h2 className="currency_heading">{usdCurrency}</h2>
-          <p>in your account</p>
+          <div className="firstCurrency_item">
+            <p className="emoji">&#128178;</p>
+            <p>You have </p>
+            <h2 className="currency_heading">{usdCurrency}</h2>
+            <p>in your account</p>
+          </div>
         </div>
         <div className="secondCurrency">
           <div>

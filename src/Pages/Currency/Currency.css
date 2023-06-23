@@ -3,27 +3,33 @@
   justify-content: center;
   align-items: center;
   margin-top: 100px;
-  margin-left: 300px;
-  flex-wrap: wrap;
 }
 
 .firstCurrency {
   background-color: #fff;
-  padding: 9.5rem;
+  padding: 9rem;
   border-radius: 5px;
   height: 200px;
   box-shadow: 2px 2px 3px #7a7878;
-  position: absolute;
-  left: 160px;
-  z-index: 1;
+}
+
+.secondCurrency {
+  display: flex;
+  box-shadow: 5px 3px 5px;
+  padding: 5.5rem 1.7rem;
+  border-radius: 10px;
+  background-color: #3682ce;
+}
+
+.firstCurrency_item {
+  margin-right: 10px;
 }
 
 .even1,
 .even3 {
   background-color: #5f9bd9;
   width: 100%;
-  padding: 1rem 6.3rem;
-  margin-left: -90px;
+  padding: 1rem 0.2rem;
   color: #fff;
   font-weight: 900;
 }
@@ -38,18 +44,7 @@
 
 .currency_heading {
   font-size: 40px;
-  width: 20px;
-  text-align: center;
   font-weight: 400;
-}
-
-.secondCurrency {
-  position: relative;
-  display: flex;
-  box-shadow: 5px 3px 5px;
-  padding: 5.5rem 7rem;
-  border-radius: 10px;
-  background-color: #3682ce;
 }
 
 .button_Currency {
@@ -61,7 +56,8 @@
 }
 
 .default {
-  font-size: x-large;
+  font-size: 1.5rem;
+  width: 100%;
   font-weight: 500;
   margin-left: 150px;
 }
@@ -111,20 +107,36 @@ span {
 @media screen and (max-width: 768px) {
   .firstCurrency {
     background-color: #fff;
-    padding: 10rem;
+    padding: 9rem;
     border-radius: 5px;
     height: 200px;
     box-shadow: 2px 2px 3px #7a7878;
-    position: relative;
-    left: 0px;
-    z-index: 1;
+    width: 10%;
   }
   .Currency {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
-    margin-left: 10px;
-    margin-right: 10px;  
-}
+    max-width: 500px;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+  .default {
+    font-size: 1.3rem;
+    width: 100%;
+    font-weight: 500;
+    margin-left: 50px;
+  }
+  .currency_heading {
+    font-size: 40px;
+    font-weight: 400;
+text-align: center;
+  }
+  .firstCurrency_item {
+   display: flex;
+   flex-wrap: wrap;
+   align-items: center;
+    width: 100%;
+    margin-left: -30px;
+  }
 }
